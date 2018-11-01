@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Difela tsa sione </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="fela.js"></script>
+        
+        <link rel="stylesheet" href="../themes/theme1/difelablue.css" />
+        <link rel="stylesheet" href="../themes/theme1/jquery.mobile.icons.min.css" />
+        
+        <link rel="stylesheet" href="fela.css" />
+        
+		</head>
+
+		<body onLoad="hidePause()">
+
+			<div data-role="page"> 
+
+				<div data-role="header" data-theme="d" data-position="fixed" data-fullscreen="true">
+                    <a href="/difelablue/index.html" data-icon="carat-l" data-iconpos="notext"></a>
+					<h2> DIFELA </h2>
+                    <button id="favIcon"></button>
+				</div>
+				<br>
+				<br>
+				<div data-role="content">
+					<h2 align="center"> 02 Ho `Mopi wa batho</h2>
+
+
+					<p align="center" class="sefela">
+                        
+           
+			Ho 'Mopi wa batho,<br>
+Lona ba melato<br>
+Le inyatseng!<br>
+Tshabo e tshoanela<br>
+Ba tlang ho rapela<br>
+Ea se nang ho fela,<br>
+Ea re entseng.<br><br>
+                        
+Thoko tsa Modimo<br>
+Di binoa hodimo<br>
+Ke baphedi;<br>
+Rona, re khutsa ke'ng?<br>
+Le mona lefatsheng<br>
+Re tsamaya pontsheng<br>
+Ya Mohlodi.<br><br>
+Re bokeng hararo<br>
+Ea kaletseng maru,<br>
+Ea tshabehang;<br>
+Re re : O moholo,<br>
+Moholo, moholo!<br>
+                        
+O re fe dipelo<br>
+Tse o tshabang.<br><br>
+'Moloki ea mohau,<br>
+Ke ka lefu la hao<br>
+Re ka phelang;<br>
+Re ne re itshentse,<br>
+O ikotlisitse,<br>
+O lokiseditse<br>
+Ba dumelang.<br>
+	
+</p>
+
+				</div>
+
+		<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a" data-fullscreen="false">
+					<div data-role="navbar">
+                    <input id="volume" type="range" min="0" max="10" value="5">
+                    <br>
+                        
+                    <audio id="audio" src="media/14%20Love%20(Remix).mp3"></audio>
+                    <div id="audio-buttons" align="center">
+                        <button id="playBtn" onclick="play()"></button>
+                        <button id="pauseBtn" onclick="pause()"></button>
+                    </div>
+                        
+                    <div class="clearfix"></div>
+                        <div id="tracker">
+                            <div id="progressbar">
+                            <span id="progress"></span>
+                            </div>
+                        <span id="duration"></span>
+                        </div>
+                        <div class="clearfix"></div>
+				</div>
+
+			</div>
+
+			</div>
+
+
+
+		</body>
+
+
+</html>

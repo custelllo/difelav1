@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Difela tsa sione </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="index2.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+		</head>   
+
+		<body>
+
+			<div data-role="page"> 
+                
+                <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="false">
+					<h3> Difela tsa sione </h3>
+				</div>
+				<p  align="center" class="difelaHeading">Difela tsa sione 1 - 100</p>
+
+
+
+                <div id="search">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Song or Song Number...">
+
+                    
+                    <ul id="myUL">
+                            <li><a href="01.html">01 Pele lentswe le ne la re</a></li>
+                            <li><a href="111.html">02 Ho `Mopi wa batho</a></li>
+                            <li><a href="03.html">03 Pelatulo se tshabehang</a></li>
+                            <li><a href="04.html">04 Ketso tsa hao ntate</a></li>
+                            <li><a href="05.html">05 O a kganya</a></li>
+                            <li><a href="06.html">06 Dithabeng le dithoteng</a></li>
+                            <li><a href="07.html">07 Jehova, modimo wa israele</a></li>
+                            <li><a href="08.html">08 Jehova, Morena wa ka</a></li>
+                            <li><a href="09.html">09 Moya wa ka, o rorise Modimo</a></li>
+                            <li><a href="10.html">10 Tlong Monhgadi wa ho phela</a></li>
+                            <li><a href="11.html">11 Bokang modimo wa kganya</a></li>
+                            <li><a href="12.html">12 Rea oboka Morena</a></li>
+                            <li><a href="13.html">13 A eleboheng Morena</a></li>
+                            <li><a href="14.html">14 Morena, litshitso tsa hao</a></li>
+                        </ul>
+       
+                </div>
+
+		
+		<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b" data-fullscreen="true">
+					<div data-role="navbar">
+						<ul>
+								<li>
+					<a href="first.html" data-transition="none">1-100</a></li>
+					<li>
+					<a href="second.html" data-transition="none">101-200</a></li>
+					<li>
+					<a href="third.html" data-transition="none">201-300</a></li>
+					<li>
+					<a href="fourth.html" data-transition="none">301-455</a></li>
+				</ul>
+				</div>
+
+
+            </div>
+            </div>
+
+		</body>
+
+
+</html>

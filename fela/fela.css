@@ -1,0 +1,40 @@
+#favIcon {
+    width:20px;
+    height: 20px;
+ background:url(../images/redheart20.png) no-repeat; 
+    margin-top: 9px;
+}
+#audio-buttons {
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    margin-left: 23px;
+    overflow: auto;
+}
+input#volume{
+    width: 95%;
+    -webkit-appearance: none !important;
+    margin-left: 2%;
+    background: #ccc;
+    height: 1px;
+    margin-bottom: 20px;
+}
+#playBtn {
+   width:20px;
+    height: 20px;
+ background:url(../images/play20.png) no-repeat;
+
+}
+.clearfix {
+    clear: both;
+}
+#pauseBtn {
+        width:20px;
+    height: 20px;
+ background:url(../images/pause20.png) no-repeat;
+}
+
+.sefela {
+    
+    font-size: 20px;
+}
